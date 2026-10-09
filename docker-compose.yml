@@ -1,0 +1,27 @@
+# Self-hosted n8n with the Jev Decision node loaded from this folder.
+#
+#   npm ci && npm run build          # builds the node into dist/
+#   npm run examples:custom          # example workflows for a folder-loaded node, in workflows/custom/
+#   cp .env.example .env             # then set N8N_ENCRYPTION_KEY
+#   docker compose up -d
+#   docker compose exec n8n n8n import:workflow --separate --input=/workflows
+#
+# Open http://localhost:5678, create the owner account, then add a "TypeSafe API" credential with your key.
+services:
+  n8n:
+    image: n8nio/n8n:${N8N_VERSION:-2.8.4}
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      N8N_CUSTOM_EXTENSIONS: /opt/n8n-nodes-jev
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:?set N8N_ENCRYPTION_KEY in .env}
+      N8N_DIAGNOSTICS_ENABLED: "false"
+      GENERIC_TIMEZONE: ${GENERIC_TIMEZONE:-UTC}
+    volumes:
+      - ./dist:/opt/n8n-nodes-jev:ro
+      - ./workflows/custom:/workflows:ro
+      - n8n-data:/home/node/.n8n
+
+volumes:
+  n8n-data:

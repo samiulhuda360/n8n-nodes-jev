@@ -1,0 +1,253 @@
+{
+  "name": "Jev: incident and alert triage",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Incident and alert triage\nFor every alert Jev picks the **service area**, scores **severity** (SEV4 to SEV1) and says whether it is a **customer-facing outage**.\n\nConfident customer-facing alerts at SEV2 or above page on-call. Other confident alerts become tickets. Unclear alerts go to the on-call channel for a human look.",
+        "height": 260,
+        "width": 460,
+        "color": 4
+      },
+      "id": "42cf9470-6e41-5d58-a5b8-b1ec942ec694",
+      "name": "About this workflow",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -60
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f6ebfd22-cee7-5922-ada3-0815c5bb04b9",
+      "name": "Try with sample data",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Invented sample data. In production, replace this node with your real trigger.\nreturn [\n  {\n    \"source\": \"monitoring\",\n    \"title\": \"Checkout error rate 38% (threshold 2%)\",\n    \"details\": \"payments-api 5xx spike since 09:12 UTC across all regions. Card payments failing for customers.\"\n  },\n  {\n    \"source\": \"monitoring\",\n    \"title\": \"Nightly warehouse export 40 min late\",\n    \"details\": \"data-export job still running. Downstream finance dashboard will refresh late. No customer impact.\"\n  },\n  {\n    \"source\": \"support\",\n    \"title\": \"Several customers cannot log in\",\n    \"details\": \"12 tickets in 20 minutes: \\\"invalid session\\\" after login on the web app. Mobile seems fine.\"\n  },\n  {\n    \"source\": \"monitoring\",\n    \"title\": \"Disk 81% on build runner 3\",\n    \"details\": \"ci-runner-3 disk usage crossed 80%. Builds still passing.\"\n  },\n  {\n    \"source\": \"chat\",\n    \"title\": \"something feels off\",\n    \"details\": \"A few things look slower than usual? Not sure where.\"\n  }\n].map((json) => ({ json }));"
+      },
+      "id": "4c926710-86c4-5c5d-a0ae-4261d9c987fb",
+      "name": "Sample alerts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "askSeveral",
+        "stateSource": "item",
+        "questions": {
+          "question": [
+            {
+              "key": "area",
+              "type": "choice",
+              "instructions": "Which service area does this alert belong to?",
+              "criteria": "payments: Checkout, card payments, billing services\nauth: Login, sessions, single sign-on, user accounts\napi: Public API and webhooks\nweb_app: The web or mobile app front end\ndata: Data pipelines, exports, reporting jobs\ninfrastructure: Servers, disks, networks, build and deploy systems",
+              "threshold": 0,
+              "gate": true
+            },
+            {
+              "key": "severity",
+              "type": "score",
+              "instructions": "How severe is this incident?",
+              "criteria": "SEV4: no user impact, housekeeping\nSEV3: minor or internal impact, a workaround exists\nSEV2: a major feature is degraded for some customers\nSEV1: a core service is down or failing for most customers",
+              "threshold": 0,
+              "gate": true
+            },
+            {
+              "key": "customer_facing",
+              "type": "noul",
+              "instructions": "Is this a customer-facing outage happening now?",
+              "criteria": "yes: Customers cannot use part of the product right now\nno: Internal only, or a warning with no customer impact yet",
+              "threshold": 0,
+              "gate": true
+            }
+          ]
+        },
+        "threshold": 0.7,
+        "additionalOptions": {
+          "includeAudit": true
+        }
+      },
+      "id": "635bcacf-dc01-5c25-a55e-07a022c2bcfb",
+      "name": "Jev Decision",
+      "type": "n8n-nodes-jev.jevDecision",
+      "typeVersion": 1,
+      "position": [
+        460,
+        300
+      ],
+      "credentials": {
+        "typeSafeApi": {
+          "id": "jevTypeSafeCred1",
+          "name": "TypeSafe account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "8eada44f-db49-53fb-a2a9-88235cc26539",
+              "leftValue": "={{ $json.jev.answers.customer_facing.answer }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "b103aabb-625c-5835-ab9f-183fe090a20a",
+              "leftValue": "={{ $json.jev.answers.severity.level }}",
+              "rightValue": 2,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "id": "6fa4217b-1ae1-597f-af3f-32594c7f8b23",
+      "name": "Page on-call?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        740,
+        200
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "5ec4d88b-3156-518f-ab11-be53355f907b",
+      "name": "Page on-call",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        100
+      ],
+      "notes": "Placeholder: your paging tool",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "3f5207bc-3c00-5f83-a420-f76f320addbd",
+      "name": "Create ticket",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        300
+      ],
+      "notes": "Placeholder: your issue tracker",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "c0f9e704-e087-5d6c-ada5-a973c410458a",
+      "name": "On-call channel",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        740,
+        520
+      ],
+      "notes": "Placeholder: a person triages it",
+      "notesInFlow": true
+    }
+  ],
+  "connections": {
+    "Try with sample data": {
+      "main": [
+        [
+          {
+            "node": "Sample alerts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sample alerts": {
+      "main": [
+        [
+          {
+            "node": "Jev Decision",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Jev Decision": {
+      "main": [
+        [
+          {
+            "node": "Page on-call?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "On-call channel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Page on-call?": {
+      "main": [
+        [
+          {
+            "node": "Page on-call",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create ticket",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [],
+  "active": false,
+  "id": "jevIncidentTri01",
+  "versionId": "4dc972c9-5643-5763-a431-f76903d5502d",
+  "description": "Pages on-call for confident customer-facing incidents and sends unclear alerts to a person."
+}

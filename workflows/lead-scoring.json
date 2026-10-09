@@ -1,0 +1,231 @@
+{
+  "name": "Jev: inbound lead scoring",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Inbound lead scoring\nJev **scores fit** (0 to 3) and picks the **buying intent** of each website enquiry in one call.\n\nConfident hot leads (good fit and ready to buy) go to the CRM. Everything else goes to a review list for the sales team.",
+        "height": 240,
+        "width": 460,
+        "color": 4
+      },
+      "id": "4f196e1f-ceea-56f3-a66a-101c86ca9a6b",
+      "name": "About this workflow",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -60
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "bc42fc1f-93ed-5b6b-ad43-eec8fd638fa5",
+      "name": "Try with sample data",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Invented sample data. In production, replace this node with your real trigger.\nreturn [\n  {\n    \"name\": \"Dana Whitfield\",\n    \"company\": \"Copperline Logistics\",\n    \"size\": \"120 staff\",\n    \"message\": \"Our finance team of 6 needs approvals and multi-currency. Budget approved, we want to start next month. Can we see a demo this week?\"\n  },\n  {\n    \"name\": \"Tom Okafor\",\n    \"company\": \"Self-employed\",\n    \"size\": \"1\",\n    \"message\": \"just looking around, is there a free version?\"\n  },\n  {\n    \"name\": \"Rhea Lindqvist\",\n    \"company\": \"Bluefin Dental Group\",\n    \"size\": \"45 staff, 4 clinics\",\n    \"message\": \"We are reviewing tools for next year. Could you send a brochure and pricing for 8 users?\"\n  },\n  {\n    \"name\": \"Marcus Bell\",\n    \"company\": \"Northgate Studios\",\n    \"size\": \"30 staff\",\n    \"message\": \"Our contract with our current provider ends in 3 weeks. We need payroll for 30 people and a quote today if possible.\"\n  },\n  {\n    \"name\": \"Win a free cruise\",\n    \"company\": \"-\",\n    \"size\": \"-\",\n    \"message\": \"Click here to claim your prize now!!!\"\n  }\n].map((json) => ({ json }));"
+      },
+      "id": "65be00e0-1558-5a25-a5a0-8545c4f6a03c",
+      "name": "Sample enquiries",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "askSeveral",
+        "stateSource": "item",
+        "questions": {
+          "question": [
+            {
+              "key": "fit",
+              "type": "score",
+              "instructions": "How well does this company fit a bookkeeping and payroll product for small and mid-sized businesses?",
+              "criteria": "No fit: spam, a job seeker, or not a business\nWeak fit: a sole trader or hobby use\nGood fit: a small business with a finance need\nStrong fit: a growing business with several finance users and a clear need such as payroll or approvals",
+              "threshold": 0,
+              "gate": true
+            },
+            {
+              "key": "intent",
+              "type": "choice",
+              "instructions": "How ready to buy is this person?",
+              "criteria": "buying_now: Wants to buy or start soon: asks for a demo, a quote, or names a date\nevaluating: Comparing options or gathering information for later\nbrowsing: Casual interest, no clear need\nnot_a_lead: Spam, a job application, or a supplier pitch",
+              "threshold": 0,
+              "gate": true
+            }
+          ]
+        },
+        "threshold": 0.6,
+        "additionalOptions": {
+          "includeAudit": true
+        }
+      },
+      "id": "6022581f-51c7-59df-a77d-97df1775ca61",
+      "name": "Jev Decision",
+      "type": "n8n-nodes-jev.jevDecision",
+      "typeVersion": 1,
+      "position": [
+        460,
+        300
+      ],
+      "credentials": {
+        "typeSafeApi": {
+          "id": "jevTypeSafeCred1",
+          "name": "TypeSafe account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f3f2029b-3ffe-532d-a508-121684667fab",
+              "leftValue": "={{ $json.jev.answers.fit.level }}",
+              "rightValue": 2,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            },
+            {
+              "id": "7fccc92c-1b30-5295-aa67-49f04d5198d7",
+              "leftValue": "={{ $json.jev.answers.intent.answer }}",
+              "rightValue": "buying_now",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "id": "6dcf9616-09f0-5959-a893-ea998a600493",
+      "name": "Hot lead?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        740,
+        200
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "594b0605-4644-5a43-ab1c-5ac9f296046a",
+      "name": "Add to CRM",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        100
+      ],
+      "notes": "Placeholder: your CRM node",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "5fe9294f-f5ba-506f-aeb1-bcc48ca84ecc",
+      "name": "Review list",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        420
+      ],
+      "notes": "Placeholder: a sheet or table for sales",
+      "notesInFlow": true
+    }
+  ],
+  "connections": {
+    "Try with sample data": {
+      "main": [
+        [
+          {
+            "node": "Sample enquiries",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sample enquiries": {
+      "main": [
+        [
+          {
+            "node": "Jev Decision",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Jev Decision": {
+      "main": [
+        [
+          {
+            "node": "Hot lead?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Review list",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hot lead?": {
+      "main": [
+        [
+          {
+            "node": "Add to CRM",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Review list",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [],
+  "active": false,
+  "id": "jevLeadScoring01",
+  "versionId": "255390b7-edab-5114-a187-5a923ebed2c6",
+  "description": "Sends confident hot leads to the CRM and everything else to a review list."
+}

@@ -1,0 +1,364 @@
+{
+  "name": "Jev: support inbox routing",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Support inbox routing\nJev reads each email once and answers three questions: which **team**, is it **urgent**, does it ask for a **refund**.\n\nConfident answers go straight to the team queue. Anything Jev is unsure about goes to a person.\n\nReplace **Sample inbox** with your email trigger and the queue nodes with your helpdesk.",
+        "height": 260,
+        "width": 460,
+        "color": 4
+      },
+      "id": "b924f848-c9ec-5d44-ad33-38ac77426dd5",
+      "name": "About this workflow",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        -60
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "d2a6a5f0-f48e-5ab1-a84c-11d2e0ef60fe",
+      "name": "Try with sample data",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Invented sample data. In production, replace this node with your real trigger.\nreturn [\n  {\n    \"from\": \"maya@greenleaf.example\",\n    \"subject\": \"Charged twice this month\",\n    \"body\": \"Our card shows two charges of $49 for October. Please refund the duplicate.\"\n  },\n  {\n    \"from\": \"ops@harbourcafe.example\",\n    \"subject\": \"Locked out before payroll\",\n    \"body\": \"Nobody can sign in since we turned on single sign-on, and payroll for 22 staff has to go out by 2pm today.\"\n  },\n  {\n    \"from\": \"li.wei@northfield.example\",\n    \"subject\": \"Bank feed stopped\",\n    \"body\": \"The bank feed has not imported anything since Friday. Month end is in two weeks so no panic.\"\n  },\n  {\n    \"from\": \"sam@brightpath.example\",\n    \"subject\": \"Pricing for 40 seats\",\n    \"body\": \"We are comparing tools. What would 40 users on annual billing cost, and do you have a nonprofit price?\"\n  },\n  {\n    \"from\": \"finance@atlasbuild.example\",\n    \"subject\": \"Question\",\n    \"body\": \"Can you help with the thing from last week? Same as before.\"\n  },\n  {\n    \"from\": \"jo@riverside.example\",\n    \"subject\": \"Exports and a refund?\",\n    \"body\": \"The CSV export cuts off at 10,000 rows, and since we cannot use it, can we get some money back for this month?\"\n  }\n].map((json) => ({ json }));"
+      },
+      "id": "02273db2-eaff-5b5a-a5df-a81e7b7231e7",
+      "name": "Sample inbox",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "askSeveral",
+        "stateSource": "expression",
+        "state": "=Subject: {{ $json.subject }}\n\n{{ $json.body }}",
+        "questions": {
+          "question": [
+            {
+              "key": "team",
+              "type": "choice",
+              "instructions": "Which team should handle this customer email?",
+              "criteria": "billing: An existing customer’s own subscription: charges, refunds, invoices or receipts from us, payment methods, plan changes, tax details on our invoices\ntechnical: The product not working or how to use a feature: errors, bugs, outages, slowness, bank feeds, imports, exports, reports, integrations, payroll calculations\naccount: Access and users: logging in, passwords, two-factor, single sign-on, adding or removing users, roles and permissions, account ownership, security of the login\nsales: Someone who has not bought yet or wants a new contract: pricing questions before buying, quotes, demos, trials, discounts for new deals, partner or reseller programs",
+              "threshold": 0,
+              "gate": true
+            },
+            {
+              "key": "urgent",
+              "type": "noul",
+              "instructions": "Does this email need a reply within a few hours: the customer is blocked from working right now, reports a security problem, or faces a deadline today or by tomorrow morning?",
+              "criteria": "yes: Blocked now, a security problem, or a deadline today or by tomorrow morning\nno: An inconvenience, a question, or a deadline that is days or weeks away",
+              "threshold": 0,
+              "gate": true
+            },
+            {
+              "key": "refund",
+              "type": "noul",
+              "instructions": "Does the customer ask for money back (a refund, a credit or a reversed charge)?",
+              "criteria": "",
+              "threshold": 0,
+              "gate": false
+            }
+          ]
+        },
+        "threshold": 0.8,
+        "additionalOptions": {
+          "includeAudit": true,
+          "redactPersonalData": true
+        }
+      },
+      "id": "69cdcbd9-63d1-5330-ade5-10215d7bae81",
+      "name": "Jev Decision",
+      "type": "n8n-nodes-jev.jevDecision",
+      "typeVersion": 1,
+      "position": [
+        460,
+        300
+      ],
+      "credentials": {
+        "typeSafeApi": {
+          "id": "jevTypeSafeCred1",
+          "name": "TypeSafe account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "525d15f2-7eb7-5513-a459-b21d2d5f388b",
+                    "leftValue": "={{ $json.jev.answers.team.answer }}",
+                    "rightValue": "billing",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Billing"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "3d8e848a-7234-593d-a541-727bce1b5566",
+                    "leftValue": "={{ $json.jev.answers.team.answer }}",
+                    "rightValue": "technical",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Technical"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "5754d04d-5916-5031-af27-674e02b390f0",
+                    "leftValue": "={{ $json.jev.answers.team.answer }}",
+                    "rightValue": "account",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Account"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "f46d87e0-d429-547a-aade-b347ed6d3931",
+                    "leftValue": "={{ $json.jev.answers.team.answer }}",
+                    "rightValue": "sales",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Sales"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "595363cb-6a92-56c7-a2b6-fd126571416d",
+      "name": "Send to team",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        740,
+        200
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "041a1c8f-5e5e-511b-aa29-7b979491e9b3",
+      "name": "Billing queue",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        -60
+      ],
+      "notes": "Placeholder: create the ticket in your helpdesk",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "ebba0f3f-b55e-567e-a538-2e3aebdb04cc",
+      "name": "Technical queue",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        120
+      ],
+      "notes": "Placeholder: create the ticket in your helpdesk",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "fa87ee6c-c59c-5829-a876-d044b9365e88",
+      "name": "Account queue",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        300
+      ],
+      "notes": "Placeholder: create the ticket in your helpdesk",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "f0b4562d-c57a-5b18-a0f8-e4e347aefe60",
+      "name": "Sales queue",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        480
+      ],
+      "notes": "Placeholder: hand the lead to sales",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "6a539bd6-ed18-5f80-a099-1324bb87f944",
+      "name": "Triage list",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        740,
+        560
+      ],
+      "notes": "Placeholder: a person picks the team",
+      "notesInFlow": true
+    }
+  ],
+  "connections": {
+    "Try with sample data": {
+      "main": [
+        [
+          {
+            "node": "Sample inbox",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sample inbox": {
+      "main": [
+        [
+          {
+            "node": "Jev Decision",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Jev Decision": {
+      "main": [
+        [
+          {
+            "node": "Send to team",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Triage list",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send to team": {
+      "main": [
+        [
+          {
+            "node": "Billing queue",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Technical queue",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Account queue",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Sales queue",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [],
+  "active": false,
+  "id": "jevSupportRoute1",
+  "versionId": "d6369943-69cf-5332-aa31-ac5cf307a99f",
+  "description": "Routes support emails to a team queue when Jev is confident, and to a person when it is not."
+}
