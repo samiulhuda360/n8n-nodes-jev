@@ -16,7 +16,7 @@ your workflow handles automatically, and "Needs review", which goes to a person.
 
 ## A real-life example
 
-**Nadia** leads customer support at Ledgerline, a 40-person software company (a made-up business). About 120 emails
+**Nadia** leads customer support at Acme Software, a 40-person software company (a made-up business). About 120 emails
 arrive every day, and someone reads each one just to decide where it goes: billing, technical, account access or
 sales. They also have to spot the urgent ones. That sorting takes the first two hours of every morning, and urgent
 emails still sit unread until somebody gets to them.
