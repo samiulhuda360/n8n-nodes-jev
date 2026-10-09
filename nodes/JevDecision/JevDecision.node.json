@@ -1,0 +1,10 @@
+{
+  "node": "n8n-nodes-jev.jevDecision",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Utility", "Data & Storage"],
+  "resources": {
+    "credentialDocumentation": [{ "url": "https://docs.typesafe.ai/introduction/quickstart" }],
+    "primaryDocumentation": [{ "url": "https://github.com/samiulhuda360/n8n-nodes-jev#readme" }]
+  }
+}

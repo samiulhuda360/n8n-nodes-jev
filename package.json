@@ -1,0 +1,62 @@
+{
+  "name": "n8n-nodes-jev",
+  "version": "0.1.0",
+  "description": "n8n community node for Jev, TypeSafe AI's decision model: typed Choice, Score and Yes/No answers with confidence-gated routing.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "jev",
+    "typesafe",
+    "classification",
+    "routing",
+    "confidence"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Samiul Huda"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samiulhuda360/n8n-nodes-jev.git"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "setup": "npm ci && npm run build",
+    "build": "node scripts/clean.mjs && tsc -p tsconfig.json && node scripts/copy-assets.mjs",
+    "lint": "eslint .",
+    "test": "node --test test/*.test.mjs",
+    "eval": "node eval/run.mjs",
+    "eval:offline": "node eval/run.mjs --offline",
+    "workflows": "node scripts/build-workflows.mjs",
+    "examples:custom": "node scripts/custom-examples.mjs",
+    "n8n:test": "node scripts/n8n-run.mjs",
+    "demo": "node scripts/n8n-start.mjs",
+    "screenshots": "node scripts/screenshots.mjs",
+    "check": "npm run build && npm run lint && npm test && node eval/run.mjs --offline"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/TypeSafeApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/JevDecision/JevDecision.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "8.46.0",
+    "eslint": "9.39.1",
+    "eslint-plugin-n8n-nodes-base": "2.0.0",
+    "n8n-workflow": "2.8.0",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
