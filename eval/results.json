@@ -1,0 +1,526 @@
+{
+ "emails": 200,
+ "thresholds": [
+  0.6,
+  0.8,
+  0.9
+ ],
+ "summaries": [
+  {
+   "name": "jev",
+   "model": "jev-1.13.0",
+   "n": 200,
+   "teamAccuracy": 0.945,
+   "teamMacroF1": 0.9504406806241669,
+   "teamBrier": 0.09545600000000003,
+   "urgentAccuracy": 0.96,
+   "urgentF1": 0.9245283018867925,
+   "urgentBrier": 0.03360449999999998,
+   "bothCorrect": 0.905,
+   "p50": 235,
+   "p95": 716,
+   "inputTokens": 116720,
+   "outputTokens": 12400,
+   "costPer1000": 0.024511200000000004,
+   "automation": {
+    "both": [
+     {
+      "threshold": 0.6,
+      "automated": 161,
+      "rate": 0.805,
+      "accuracy": 0.9503105590062112,
+      "wrongLetThrough": 8
+     },
+     {
+      "threshold": 0.8,
+      "automated": 118,
+      "rate": 0.59,
+      "accuracy": 0.9745762711864406,
+      "wrongLetThrough": 3
+     },
+     {
+      "threshold": 0.9,
+      "automated": 48,
+      "rate": 0.24,
+      "accuracy": 1,
+      "wrongLetThrough": 0
+     }
+    ],
+    "team": [
+     {
+      "threshold": 0.6,
+      "automated": 187,
+      "rate": 0.935,
+      "accuracy": 0.9625668449197861,
+      "wrongLetThrough": 7
+     },
+     {
+      "threshold": 0.8,
+      "automated": 171,
+      "rate": 0.855,
+      "accuracy": 0.9707602339181286,
+      "wrongLetThrough": 5
+     },
+     {
+      "threshold": 0.9,
+      "automated": 163,
+      "rate": 0.815,
+      "accuracy": 0.9693251533742331,
+      "wrongLetThrough": 5
+     }
+    ],
+    "urgent": [
+     {
+      "threshold": 0.6,
+      "automated": 173,
+      "rate": 0.865,
+      "accuracy": 0.9942196531791907,
+      "wrongLetThrough": 1
+     },
+     {
+      "threshold": 0.8,
+      "automated": 138,
+      "rate": 0.69,
+      "accuracy": 0.9927536231884058,
+      "wrongLetThrough": 1
+     },
+     {
+      "threshold": 0.9,
+      "automated": 59,
+      "rate": 0.295,
+      "accuracy": 1,
+      "wrongLetThrough": 0
+     }
+    ],
+    "mixed": {
+     "threshold": {
+      "team": 0.8,
+      "urgent": 0.6
+     },
+     "automated": 149,
+     "rate": 0.745,
+     "accuracy": 0.959731543624161,
+     "wrongLetThrough": 6
+    }
+   },
+   "reliabilityTeam": [
+    {
+     "lo": 0,
+     "hi": 0.6,
+     "n": 5,
+     "stated": 0.5399999999999999,
+     "accuracy": 0.6
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 19,
+     "stated": 0.7094736842105264,
+     "accuracy": 0.8421052631578947
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 9,
+     "stated": 0.8444444444444444,
+     "accuracy": 0.8888888888888888
+    },
+    {
+     "lo": 0.9,
+     "hi": 0.99,
+     "n": 33,
+     "stated": 0.9621212121212124,
+     "accuracy": 0.8787878787878788
+    },
+    {
+     "lo": 0.99,
+     "hi": 1,
+     "n": 134,
+     "stated": 0.9993283582089552,
+     "accuracy": 0.9925373134328358
+    }
+   ],
+   "reliabilityUrgent": [
+    {
+     "lo": 0,
+     "hi": 0.6,
+     "n": 10,
+     "stated": 0.5479999999999999,
+     "accuracy": 0.5
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 17,
+     "stated": 0.718235294117647,
+     "accuracy": 0.8823529411764706
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 35,
+     "stated": 0.8522857142857142,
+     "accuracy": 1
+    },
+    {
+     "lo": 0.9,
+     "hi": 0.99,
+     "n": 138,
+     "stated": 0.9393478260869563,
+     "accuracy": 0.9927536231884058
+    },
+    {
+     "lo": 0.99,
+     "hi": 1,
+     "n": 0,
+     "stated": 0,
+     "accuracy": 0
+    }
+   ]
+  },
+  {
+   "name": "llm",
+   "model": "gemini-flash-lite-latest",
+   "n": 200,
+   "teamAccuracy": 0.94,
+   "teamMacroF1": 0.9450643995916124,
+   "teamBrier": 0.10849200000000031,
+   "urgentAccuracy": 0.895,
+   "urgentF1": 0.8205128205128205,
+   "urgentBrier": 0.085267,
+   "bothCorrect": 0.835,
+   "p50": 1024,
+   "p95": 2192,
+   "inputTokens": 82372,
+   "outputTokens": 10149,
+   "costPer1000": 0.06148400000000001,
+   "automation": {
+    "both": [
+     {
+      "threshold": 0.6,
+      "automated": 198,
+      "rate": 0.99,
+      "accuracy": 0.8383838383838383,
+      "wrongLetThrough": 32
+     },
+     {
+      "threshold": 0.8,
+      "automated": 157,
+      "rate": 0.785,
+      "accuracy": 0.9044585987261147,
+      "wrongLetThrough": 15
+     },
+     {
+      "threshold": 0.9,
+      "automated": 95,
+      "rate": 0.475,
+      "accuracy": 0.9368421052631579,
+      "wrongLetThrough": 6
+     }
+    ],
+    "team": [
+     {
+      "threshold": 0.6,
+      "automated": 199,
+      "rate": 0.995,
+      "accuracy": 0.9447236180904522,
+      "wrongLetThrough": 11
+     },
+     {
+      "threshold": 0.8,
+      "automated": 191,
+      "rate": 0.955,
+      "accuracy": 0.9528795811518325,
+      "wrongLetThrough": 9
+     },
+     {
+      "threshold": 0.9,
+      "automated": 183,
+      "rate": 0.915,
+      "accuracy": 0.9617486338797814,
+      "wrongLetThrough": 7
+     }
+    ],
+    "urgent": [
+     {
+      "threshold": 0.6,
+      "automated": 199,
+      "rate": 0.995,
+      "accuracy": 0.8944723618090452,
+      "wrongLetThrough": 21
+     },
+     {
+      "threshold": 0.8,
+      "automated": 165,
+      "rate": 0.825,
+      "accuracy": 0.9636363636363636,
+      "wrongLetThrough": 6
+     },
+     {
+      "threshold": 0.9,
+      "automated": 99,
+      "rate": 0.495,
+      "accuracy": 1,
+      "wrongLetThrough": 0
+     }
+    ],
+    "mixed": {
+     "threshold": {
+      "team": 0.8,
+      "urgent": 0.6
+     },
+     "automated": 190,
+     "rate": 0.95,
+     "accuracy": 0.8473684210526315,
+     "wrongLetThrough": 29
+    }
+   },
+   "reliabilityTeam": [
+    {
+     "lo": 0,
+     "hi": 0.6,
+     "n": 0,
+     "stated": 0,
+     "accuracy": 0
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 4,
+     "stated": 0.7125,
+     "accuracy": 0.5
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 5,
+     "stated": 0.85,
+     "accuracy": 0.8
+    },
+    {
+     "lo": 0.9,
+     "hi": 0.99,
+     "n": 82,
+     "stated": 0.94548780487805,
+     "accuracy": 0.926829268292683
+    },
+    {
+     "lo": 0.99,
+     "hi": 1,
+     "n": 109,
+     "stated": 0.9899999999999983,
+     "accuracy": 0.9724770642201835
+    }
+   ],
+   "reliabilityUrgent": [
+    {
+     "lo": 0,
+     "hi": 0.6,
+     "n": 0,
+     "stated": 0,
+     "accuracy": 0
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 1,
+     "stated": 0.7,
+     "accuracy": 1
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 34,
+     "stated": 0.8455882352941182,
+     "accuracy": 0.5588235294117647
+    },
+    {
+     "lo": 0.9,
+     "hi": 0.99,
+     "n": 118,
+     "stated": 0.9308474576271204,
+     "accuracy": 0.9491525423728814
+    },
+    {
+     "lo": 0.99,
+     "hi": 1,
+     "n": 47,
+     "stated": 0.9900000000000002,
+     "accuracy": 1
+    }
+   ]
+  },
+  {
+   "name": "rules",
+   "model": "keyword rules",
+   "n": 200,
+   "teamAccuracy": 0.76,
+   "teamMacroF1": 0.7494914368830186,
+   "teamBrier": 0.38441666666666663,
+   "urgentAccuracy": 0.835,
+   "urgentF1": 0.7272727272727273,
+   "urgentBrier": 0.1317600000000002,
+   "bothCorrect": 0.62,
+   "p50": 0.06589999999999918,
+   "p95": 0.1115000000000066,
+   "inputTokens": 0,
+   "outputTokens": 0,
+   "costPer1000": 0,
+   "automation": {
+    "both": [
+     {
+      "threshold": 0.6,
+      "automated": 130,
+      "rate": 0.65,
+      "accuracy": 0.7384615384615385,
+      "wrongLetThrough": 34
+     },
+     {
+      "threshold": 0.8,
+      "automated": 98,
+      "rate": 0.49,
+      "accuracy": 0.7857142857142857,
+      "wrongLetThrough": 21
+     },
+     {
+      "threshold": 0.9,
+      "automated": 98,
+      "rate": 0.49,
+      "accuracy": 0.7857142857142857,
+      "wrongLetThrough": 21
+     }
+    ],
+    "team": [
+     {
+      "threshold": 0.6,
+      "automated": 130,
+      "rate": 0.65,
+      "accuracy": 0.8615384615384616,
+      "wrongLetThrough": 18
+     },
+     {
+      "threshold": 0.8,
+      "automated": 124,
+      "rate": 0.62,
+      "accuracy": 0.8548387096774194,
+      "wrongLetThrough": 18
+     },
+     {
+      "threshold": 0.9,
+      "automated": 124,
+      "rate": 0.62,
+      "accuracy": 0.8548387096774194,
+      "wrongLetThrough": 18
+     }
+    ],
+    "urgent": [
+     {
+      "threshold": 0.6,
+      "automated": 200,
+      "rate": 1,
+      "accuracy": 0.835,
+      "wrongLetThrough": 33
+     },
+     {
+      "threshold": 0.8,
+      "automated": 158,
+      "rate": 0.79,
+      "accuracy": 0.9430379746835443,
+      "wrongLetThrough": 9
+     },
+     {
+      "threshold": 0.9,
+      "automated": 158,
+      "rate": 0.79,
+      "accuracy": 0.9430379746835443,
+      "wrongLetThrough": 9
+     }
+    ],
+    "mixed": {
+     "threshold": {
+      "team": 0.8,
+      "urgent": 0.6
+     },
+     "automated": 124,
+     "rate": 0.62,
+     "accuracy": 0.7258064516129032,
+     "wrongLetThrough": 34
+    }
+   },
+   "reliabilityTeam": [
+    {
+     "lo": 0,
+     "hi": 0.6,
+     "n": 52,
+     "stated": 0.38461538461538464,
+     "accuracy": 0.5
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 21,
+     "stated": 0.6722222222222219,
+     "accuracy": 0.8095238095238095
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 3,
+     "stated": 0.8111111111111112,
+     "accuracy": 1
+    },
+    {
+     "lo": 0.9,
+     "hi": 0.99,
+     "n": 0,
+     "stated": 0,
+     "accuracy": 0
+    },
+    {
+     "lo": 0.99,
+     "hi": 1,
+     "n": 124,
+     "stated": 1,
+     "accuracy": 0.8548387096774194
+    }
+   ],
+   "reliabilityUrgent": [
+    {
+     "lo": 0,
+     "hi": 0.6,
+     "n": 0,
+     "stated": 0,
+     "accuracy": 0
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 0,
+     "stated": 0,
+     "accuracy": 0
+    },
+    {
+     "lo": 0.8,
+     "hi": 0.9,
+     "n": 42,
+     "stated": 0.8500000000000005,
+     "accuracy": 0.42857142857142855
+    },
+    {
+     "lo": 0.9,
+     "hi": 0.99,
+     "n": 158,
+     "stated": 0.9537974683544304,
+     "accuracy": 0.9430379746835443
+    },
+    {
+     "lo": 0.99,
+     "hi": 1,
+     "n": 0,
+     "stated": 0,
+     "accuracy": 0
+    }
+   ]
+  }
+ ]
+}

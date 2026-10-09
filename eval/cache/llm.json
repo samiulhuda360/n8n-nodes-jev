@@ -1,0 +1,2002 @@
+{
+ "00e209c06abbb249c902dec3": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1034
+ },
+ "00e66c3be96efa6bb1e2883f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.98\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 886
+ },
+ "01e5f3f46ef886af083c21e7": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 815
+ },
+ "031a9c277e212f7e5e5c155e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1121
+ },
+ "04683995bf1dc5d5dd27383c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 406,
+   "total_tokens": 457
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1439
+ },
+ "05f9054de5faf55943c5d332": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 906
+ },
+ "0625a5b44d89e54a2c16fbd4": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1083
+ },
+ "07d7e63daab3a8d1020be956": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 901
+ },
+ "0ad3a645f0b1d36e4037661e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 407,
+   "total_tokens": 456
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 803
+ },
+ "0c24d875631054760b1d5121": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1043
+ },
+ "0c7d2044a2e260f646e33669": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 399,
+   "total_tokens": 450
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1734
+ },
+ "0e8402a2e0bf2ac9dcb16009": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 924
+ },
+ "0ef14ccfcf594c8b2224375d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 415,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 2682
+ },
+ "11342a861abd9396817526c6": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 415,
+   "total_tokens": 466
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1020
+ },
+ "120c174485007609c946e950": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 405,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 843
+ },
+ "129d013745a4337de0fd6772": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 423,
+   "total_tokens": 474
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 964
+ },
+ "12e226d6fe4227f8d2a4f59f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1047
+ },
+ "13151a5fdbddfad7c51eba64": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1457
+ },
+ "1371f0b30d5db61f9e975718": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1035
+ },
+ "1711f0ce337de20c4a49d948": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 413,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1019
+ },
+ "1739867da39802fe5f16aaba": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 410,
+   "total_tokens": 460
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 3560
+ },
+ "19d623413f5beef3ea989604": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 417,
+   "total_tokens": 468
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 957
+ },
+ "1ae8e8c43451514d3f709ecc": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 417,
+   "total_tokens": 467
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 990
+ },
+ "1b1e3468b12230e551afb662": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 407,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 904
+ },
+ "1c27a8f5cc27bcc2d05e2fc6": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 415,
+   "total_tokens": 466
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 2073
+ },
+ "1df1aeb0c19d4418c7c97880": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 423,
+   "total_tokens": 474
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1180
+ },
+ "1f8ec4e05a37f2a880763a25": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 431,
+   "total_tokens": 482
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1008
+ },
+ "213b9249f7800aa5dec363a8": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 421,
+   "total_tokens": 472
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1388
+ },
+ "214203f636f2a91987729db5": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 420,
+   "total_tokens": 471
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 895
+ },
+ "236a64fc7e20801bb26f6fca": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1182
+ },
+ "23d87e3114f97dc1fcc4fcf5": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 408,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 825
+ },
+ "2552c6367b2b0f0bfe6c2285": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 876
+ },
+ "25f29139376274345d184787": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 419,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1391
+ },
+ "26b696a577510999a9e7244c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 409,
+   "total_tokens": 460
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1235
+ },
+ "2d75160da3b0d0ab10eaea82": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.85\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 402,
+   "total_tokens": 452
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1344
+ },
+ "2e92621da8227f9671f14e03": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 413,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 906
+ },
+ "3070518280c45a29701e0060": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 424,
+   "total_tokens": 475
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1669
+ },
+ "31fca79b1674151d20bffb48": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 405,
+   "total_tokens": 456
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 959
+ },
+ "34eb9731ae3a7a5d9b678471": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1122
+ },
+ "35973266fe554028183920bf": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 421,
+   "total_tokens": 472
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 900
+ },
+ "38c8a34d45072652ae65c9ea": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.75\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 407,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 863
+ },
+ "3966723cb334f25a03dac1b7": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 816
+ },
+ "3a8a83f6af1281f64b24a62e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 411,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 866
+ },
+ "3a9ab1e20e86524cfded2858": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 406,
+   "total_tokens": 457
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1112
+ },
+ "3ac51899a62f6383d43d4fb4": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1102
+ },
+ "3b076bbd7c8aa39afee5292c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 407,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1170
+ },
+ "3b07725ec7990440bd3c2fe2": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 422,
+   "total_tokens": 473
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1670
+ },
+ "3b517d7bc07bd8229724d12f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": 0.85\n  },\n  \"urgent\": {\n    \"probability\": 0.1\n  }\n}",
+  "usage": {
+   "completion_tokens": 48,
+   "prompt_tokens": 413,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1062
+ },
+ "3cb234dabfa770006eb7d184": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 422,
+   "total_tokens": 473
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 2375
+ },
+ "3ecfc18ddad5a33b5e5fc220": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 416,
+   "total_tokens": 467
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1509
+ },
+ "3ef41969cd316b91445780c9": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1187
+ },
+ "3fe7fe94f0a5010c7c15a8b3": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1009
+ },
+ "4113d096061a564e67de2411": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 402,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1015
+ },
+ "44d4e63fdfcea88300fd565c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 429,
+   "total_tokens": 479
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1165
+ },
+ "44ddd410c46d605833900fff": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 415,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1237
+ },
+ "45742b306bb458a7ef64f8fa": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1011
+ },
+ "466ca0323a724ab04dc7412a": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 406,
+   "total_tokens": 457
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1196
+ },
+ "4b35090a069d86819d76dc09": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 398,
+   "total_tokens": 449
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 877
+ },
+ "4bbec3c8b1c052e54b6ff77b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1072
+ },
+ "4bfe4258011b6b0434cd5513": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 414,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 845
+ },
+ "50be02ff2ce2a55527f93de3": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 421,
+   "total_tokens": 472
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 2298
+ },
+ "510082fecf128ba93c30cf29": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 402,
+   "total_tokens": 452
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 899
+ },
+ "5157162d2e6cd45d38cde46d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 402,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1009
+ },
+ "538df5ab8c7109b0e845ae69": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 421,
+   "total_tokens": 472
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1632
+ },
+ "540afe513503d81be7376612": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.98\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 419,
+   "total_tokens": 470
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1221
+ },
+ "546e9470ac0cc0fbd616c8e1": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1251
+ },
+ "55405b105692d6a82fb1a553": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 400,
+   "total_tokens": 451
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1422
+ },
+ "581ad08b48853cc0cbbf3bee": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 419,
+   "total_tokens": 470
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 864
+ },
+ "595e4d796329f7ab22c0c32b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 408,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 877
+ },
+ "5a17d73b46569da484de6485": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 928
+ },
+ "5a2bcafbc5dc02c3d27ad9c9": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 991
+ },
+ "5d577c1b773adfa8ea75c350": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 983
+ },
+ "5d60832c2e29434540176d8d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 402,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 895
+ },
+ "5f2cdebb4a7a069078e60eef": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 908
+ },
+ "5fef69d2a25299b288869c68": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1200
+ },
+ "61d52fe6a70f680392b0e08e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 2418
+ },
+ "620b7d761a39be1c4a2b8dee": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 414,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 18810
+ },
+ "62fb22357989918d4160ca20": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 900
+ },
+ "63d6e1776b01bf7f4ee6191f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.85\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1100
+ },
+ "642166336ccaaa82eed389dc": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.6\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 421,
+   "total_tokens": 471
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 917
+ },
+ "64581fac3cb20fcb68c21ec5": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.90\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 413,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1107
+ },
+ "65542fa835afa7e2903ebcd7": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.75\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 414,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 2192
+ },
+ "684d66c0f63b47aeb37b7e1b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 409,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1400
+ },
+ "686f27dafd3060a70459479b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 982
+ },
+ "69199dcc90525550e646c65c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1412
+ },
+ "6ad0b30251bcfb237c676d2a": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 405,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1229
+ },
+ "6ae18a83af52c8721daee2e2": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 414,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 971
+ },
+ "6b04c61c1f4ccd0cc9fca5e4": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 408,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 860
+ },
+ "6b968e6147e905c011f01a8d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 425,
+   "total_tokens": 476
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 857
+ },
+ "6ba827573712d6de450d24b2": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 408,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 885
+ },
+ "6ce94f6d3a01b5c3ef1a8617": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.85\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 403,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 912
+ },
+ "7316e0c05c3a789f9cfbd34e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 975
+ },
+ "753d8e6010f6fef6705bc9b8": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 406,
+   "total_tokens": 457
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 928
+ },
+ "768d055533777455128c4a6d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1056
+ },
+ "78cc2255eeb49a07f9200b9b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 904
+ },
+ "795ccc86d94ff7c78effec75": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 409,
+   "total_tokens": 460
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1183
+ },
+ "7cccd39088e58ce3acc0c3ec": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 409,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1042
+ },
+ "7e50696cca921823e4e6fb75": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 409,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 2059
+ },
+ "7f529e1ef821bf0421d03c64": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 428,
+   "total_tokens": 479
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1090
+ },
+ "7f55f8cbc1b50a0ed990ab18": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 401,
+   "total_tokens": 452
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 8990
+ },
+ "8182fb0844bf4d4c04604365": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 888
+ },
+ "81d222742cc2cc337ab3eebf": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 411,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1173
+ },
+ "82860d64c1b786ba52eb82cc": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1049
+ },
+ "8356b588a7d027b77563583c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 420,
+   "total_tokens": 471
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1346
+ },
+ "83d8457c5299201b61449f2e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 415,
+   "total_tokens": 466
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1719
+ },
+ "88394c66b2727593c8e2b624": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 413,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1248
+ },
+ "8a302766a004e88364971ecf": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1420
+ },
+ "8b21b82ee6a8fe8cf4854cfc": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 427,
+   "total_tokens": 478
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 837
+ },
+ "8b2bcca5f1b4fd3918603b70": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 422,
+   "total_tokens": 473
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1010
+ },
+ "8c5ec47efe2fc801518f4950": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 400,
+   "total_tokens": 451
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 906
+ },
+ "8da2cd791235147459debd8f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.8\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 412,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1024
+ },
+ "8ee3d6a575e2d40d1bc4d267": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 409,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 919
+ },
+ "8f839656377f0da39644f25a": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 414,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 812
+ },
+ "90722452f1495e1f5092ccdc": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1186
+ },
+ "90b1705d827b234ae2c4a1d4": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 415,
+   "total_tokens": 466
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 938
+ },
+ "91400ede1b43829fefe18e32": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 416,
+   "total_tokens": 466
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1110
+ },
+ "93effb74fd617cb05615e347": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 417,
+   "total_tokens": 468
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1174
+ },
+ "941b20f359065fcac417143f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 406,
+   "total_tokens": 457
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1102
+ },
+ "950148e5966ff7d07e44a961": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 414,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 932
+ },
+ "956e77ff2019572205027b4d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 939
+ },
+ "96695bf20afe9634663ab72d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 407,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 3133
+ },
+ "98d79356d124aa5a5fecd611": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 416,
+   "total_tokens": 467
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1278
+ },
+ "9a0bf410a56777252619be6c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 3530
+ },
+ "9a12e7b96d5b9e7e2aba1f87": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1326
+ },
+ "9a17bcff2d28d9545c232686": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 406,
+   "total_tokens": 456
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 826
+ },
+ "9a988def7454a10c7c4c0846": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1276
+ },
+ "9cf09f5ae2ff68080a82c8d8": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 878
+ },
+ "9e881fce3db2bed10f562e91": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 403,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1046
+ },
+ "9fdb539203b7a517e2095fc7": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 413,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 798
+ },
+ "a09caa43be466ac5025bfe6b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.3\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 413,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 903
+ },
+ "a1ab040494b237b919797ccd": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 415,
+   "total_tokens": 466
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1075
+ },
+ "a51d701a3c9d9d10baff2245": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 413,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 909
+ },
+ "a6077ae97ddd12efbc56a64c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 411,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 921
+ },
+ "a9de9bc98783a541a6f10e11": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 420,
+   "total_tokens": 471
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 825
+ },
+ "aa02020759ba613dfbab1252": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 393,
+   "total_tokens": 444
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1182
+ },
+ "ab5d4551155c2c048ce98b88": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 403,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 759
+ },
+ "adc6c47ee4367842e65dfa9b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 406,
+   "total_tokens": 457
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 944
+ },
+ "ae7fbcb9ff022c8cf14dcf98": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 901
+ },
+ "b00f746849c03b91c84c78a9": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 412,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1578
+ },
+ "b050f80d98831c067aaf7326": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 399,
+   "total_tokens": 448
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 985
+ },
+ "b0bfef3b704c8d2b62acca80": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 406,
+   "total_tokens": 457
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1698
+ },
+ "b1239877963096d81e953f28": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1218
+ },
+ "b1b2286c997f690516a67a9d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 407,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1298
+ },
+ "b3318f213785eec8bd7e487d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 409,
+   "total_tokens": 460
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1021
+ },
+ "b4a296ec20cad7afd6906090": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 408,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1008
+ },
+ "b5d256438e1beb95960a4d72": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 416,
+   "total_tokens": 467
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1407
+ },
+ "b9b3cf90bfd63c5ad034cfad": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 422,
+   "total_tokens": 473
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 916
+ },
+ "bab1136395c56162cd8a936f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.2\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 420,
+   "total_tokens": 470
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1135
+ },
+ "bc14ea88927fa45165f65f79": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 419,
+   "total_tokens": 470
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 987
+ },
+ "bc6511b227bfdbc7c163219f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 419,
+   "total_tokens": 470
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 934
+ },
+ "be0bd52969bec8965ce77101": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 405,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1211
+ },
+ "be9e49a3175f5b5eddfa4787": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.75\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 408,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 864
+ },
+ "bf57c1747c35b5bd07add928": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.9\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.8\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 413,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 868
+ },
+ "c2a339e1efc07e820946eb70": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 425,
+   "total_tokens": 475
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 917
+ },
+ "c6bd6c9e787070e59286cc16": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 415,
+   "total_tokens": 465
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1149
+ },
+ "c6cd16997b5a26439950a9aa": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 415,
+   "total_tokens": 466
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1347
+ },
+ "ca8310a271ef67516324995b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 420,
+   "total_tokens": 471
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1200
+ },
+ "cb4be59c46fc4d641fe4b926": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 423,
+   "total_tokens": 474
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1065
+ },
+ "cba6d79ef47428d83c063c20": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1013
+ },
+ "cf3fe041603426f342536936": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1161
+ },
+ "d09fa0e090b3226114e72878": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 398,
+   "total_tokens": 449
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 958
+ },
+ "d0e13db6ee87ae17bd533584": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 413,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 976
+ },
+ "d2b655a5348256167c7190a2": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 8408
+ },
+ "d6ca9feca37f78bcce18d22d": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 947
+ },
+ "d6cf1b3a998650ba8d00c004": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.85\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1059
+ },
+ "d76f08d00c81b51d9e501498": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 411,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1807
+ },
+ "da4baad75f09b378a62becb5": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 421,
+   "total_tokens": 472
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 997
+ },
+ "daaf3c775314372b86bb454c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 420,
+   "total_tokens": 471
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 940
+ },
+ "dad601eeca7ebe23d9801e0a": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 417,
+   "total_tokens": 468
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1207
+ },
+ "dba380ed6bfb5653f9af9350": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.98\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 429,
+   "total_tokens": 480
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1175
+ },
+ "de5339fac0e7559d89cff8c2": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 417,
+   "total_tokens": 467
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1137
+ },
+ "ded6ccaf8cd6aa27cfb83b87": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 407,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 893
+ },
+ "e09ddda2a41ba930e8eafcbe": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 414,
+   "total_tokens": 464
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 914
+ },
+ "e0f2323cc521605073635b9b": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 422,
+   "total_tokens": 473
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1134
+ },
+ "e3404f33cff693b50a855408": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 397,
+   "total_tokens": 448
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 894
+ },
+ "e3a01402f6aad375656795a3": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 405,
+   "total_tokens": 456
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 911
+ },
+ "e4299d606c269e1f455aff89": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 828
+ },
+ "e51a626bf0abbf629af950a1": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 408,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 927
+ },
+ "e776a6bdeda5e4a6f6d6f02e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 404,
+   "total_tokens": 455
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 949
+ },
+ "e7a01ecb63379e39165cc90c": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 403,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 946
+ },
+ "eafa289e40a968da3f49d924": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 412,
+   "total_tokens": 462
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 884
+ },
+ "ec8bebb09ec06c120193862f": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 416,
+   "total_tokens": 467
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 851
+ },
+ "ecc059eee6b18dc1c648a840": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 419,
+   "total_tokens": 470
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 880
+ },
+ "ece3c08080281e8a3eac693e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.98\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1031
+ },
+ "ed6ebfcb4492948152459ae1": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.15\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 408,
+   "total_tokens": 459
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1242
+ },
+ "ed8f1e16cbc39e9105894d46": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 412,
+   "total_tokens": 463
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1266
+ },
+ "ed915f364639e52e448993c2": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 417,
+   "total_tokens": 468
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 998
+ },
+ "ef87cc40bb36e9f677a0ec26": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 421,
+   "total_tokens": 472
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 888
+ },
+ "ef8f57414b521fe6004a41c4": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.10\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 403,
+   "total_tokens": 454
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1131
+ },
+ "f0e0663a1306f03735d26548": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 420,
+   "total_tokens": 471
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 854
+ },
+ "f2f0223a956bda2e1b6140c4": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 418,
+   "total_tokens": 469
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 832
+ },
+ "f38558a6b1edaec70f11e23e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.99\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 421,
+   "total_tokens": 472
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1231
+ },
+ "f52dfeea8388322b7820daa8": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 895
+ },
+ "f58bf95fccf8e265c0c92542": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 407,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1536
+ },
+ "f64e14d492fbc720b23c6aaa": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.1\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 408,
+   "total_tokens": 458
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1139
+ },
+ "f6538c77401ed517a1122541": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 417,
+   "total_tokens": 468
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1459
+ },
+ "fb10165ac0990a0cc38711ee": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"technical\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 410,
+   "total_tokens": 461
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1154
+ },
+ "fb2fa0224949a069ac52e211": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.95\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 416,
+   "total_tokens": 467
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 970
+ },
+ "fd8c86567343ec1ed21bfd9e": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.01\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 402,
+   "total_tokens": 453
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1185
+ },
+ "fdd929744475f9ea5a023bb4": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"account\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.85\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 409,
+   "total_tokens": 460
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1295
+ }
+}
