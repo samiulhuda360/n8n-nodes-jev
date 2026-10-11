@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-jev",
+  "name": "@samiulhuda360/n8n-nodes-jev",
   "version": "0.1.0",
   "description": "n8n community node for Jev, TypeSafe AI's decision model: typed Choice, Score and Yes/No answers with confidence-gated routing.",
   "keywords": [

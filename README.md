@@ -281,15 +281,15 @@ input tokens in total). Every response is recorded in `eval/cache/`, so `node ev
 The package follows n8n's community node format: TypeScript, the `n8n-nodes-` name, and an `n8n` section in
 `package.json` that lists the node and credential.
 
-**From the n8n UI.** In **Settings > Community nodes > Install**, enter `n8n-nodes-jev`. This needs the package on
+**From the n8n UI.** In **Settings > Community nodes > Install**, enter `@samiulhuda360/n8n-nodes-jev`. This needs the package on
 the npm registry and an instance that allows community nodes.
 
 **Manual install from a package file** (the same place the UI installs to):
 
 ```bash
-npm ci && npm run build && npm pack                     # creates n8n-nodes-jev-0.1.0.tgz
+npm ci && npm run build && npm pack                     # creates samiulhuda360-n8n-nodes-jev-0.1.0.tgz
 cd ~/.n8n/nodes                                          # create it with "npm init -y" if it does not exist
-npm install --legacy-peer-deps /path/to/n8n-nodes-jev-0.1.0.tgz
+npm install --legacy-peer-deps /path/to/samiulhuda360-n8n-nodes-jev-0.1.0.tgz
 # restart n8n
 ```
 
@@ -300,7 +300,7 @@ npm ci && npm run build
 N8N_CUSTOM_EXTENSIONS="$(pwd)/dist" n8n start
 ```
 
-n8n names nodes loaded this way `CUSTOM.jevDecision` instead of `n8n-nodes-jev.jevDecision`, so import the example
+n8n names nodes loaded this way `CUSTOM.jevDecision` instead of `@samiulhuda360/n8n-nodes-jev.jevDecision`, so import the example
 workflows from the copies made by `npm run examples:custom` (written to `workflows/custom/`).
 
 **Docker Compose** ([`docker-compose.yml`](docker-compose.yml)): n8n with the built node mounted read-only.

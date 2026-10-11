@@ -12,7 +12,7 @@ const src = join(root, 'workflows');
 export function toCustom(workflow) {
   const copy = structuredClone(workflow);
   for (const node of copy.nodes) {
-    if (node.type === 'n8n-nodes-jev.jevDecision') node.type = 'CUSTOM.jevDecision';
+    if (node.type === '@samiulhuda360/n8n-nodes-jev.jevDecision') node.type = 'CUSTOM.jevDecision';
   }
   return copy;
 }

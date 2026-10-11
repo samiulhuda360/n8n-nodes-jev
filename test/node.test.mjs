@@ -18,7 +18,7 @@ function context({ items, params, reply, continueOnFail = false }) {
       return typeof value === 'function' ? value(i) : value;
     },
     getCredentials: async () => ({ apiKey: 'test-key-not-real', baseUrl: 'https://jev.example.test/' }),
-    getNode: () => ({ name: 'Jev Decision', type: 'n8n-nodes-jev.jevDecision', typeVersion: 1, parameters: {} }),
+    getNode: () => ({ name: 'Jev Decision', type: '@samiulhuda360/n8n-nodes-jev.jevDecision', typeVersion: 1, parameters: {} }),
     getWorkflow: () => ({ id: 'wf-1', name: 'Test', active: false }),
     getExecutionId: () => 'exec-9',
     continueOnFail: () => continueOnFail,

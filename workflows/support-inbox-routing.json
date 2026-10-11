@@ -82,7 +82,7 @@
       },
       "id": "69cdcbd9-63d1-5330-ade5-10215d7bae81",
       "name": "Jev Decision",
-      "type": "n8n-nodes-jev.jevDecision",
+      "type": "@samiulhuda360/n8n-nodes-jev.jevDecision",
       "typeVersion": 1,
       "position": [
         460,

@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { SUPPORT_QUESTIONS } from '../eval/questions.mjs';
 
 const OUT = fileURLToPath(new URL('../workflows/', import.meta.url));
-export const JEV_TYPE = 'n8n-nodes-jev.jevDecision';
+export const JEV_TYPE = '@samiulhuda360/n8n-nodes-jev.jevDecision';
 export const CREDENTIAL = { id: 'jevTypeSafeCred1', name: 'TypeSafe account' };
 
 const uuid = (seed) => {

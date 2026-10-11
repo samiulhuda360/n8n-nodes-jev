@@ -60,7 +60,7 @@ test('keyword rules: a clear hit, and no keywords means zero confidence', async 
 
 test('the support workflow asks exactly the evaluated questions', () => {
   const wf = workflow('support-inbox-routing');
-  const jev = wf.nodes.find((n) => n.type === 'n8n-nodes-jev.jevDecision');
+  const jev = wf.nodes.find((n) => n.type === '@samiulhuda360/n8n-nodes-jev.jevDecision');
   const [team, urgent, refund] = jev.parameters.questions.question;
   assert.equal(team.instructions, SUPPORT_QUESTIONS[0].instructions);
   assert.equal(team.criteria.split('\n').length, Object.keys(SUPPORT_QUESTIONS[0].options).length);
@@ -74,7 +74,7 @@ test('every example workflow is connected and uses the Jev node', () => {
   for (const slug of ['support-inbox-routing', 'incident-triage', 'lead-scoring']) {
     const wf = workflow(slug);
     const names = new Set(wf.nodes.map((n) => n.name));
-    assert.ok(wf.nodes.some((n) => n.type === 'n8n-nodes-jev.jevDecision'), slug);
+    assert.ok(wf.nodes.some((n) => n.type === '@samiulhuda360/n8n-nodes-jev.jevDecision'), slug);
     for (const [from, { main }] of Object.entries(wf.connections)) {
       assert.ok(names.has(from), `${slug}: ${from}`);
       for (const out of main) for (const link of out) assert.ok(names.has(link.node), `${slug}: ${link.node}`);
