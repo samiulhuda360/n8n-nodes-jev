@@ -49,6 +49,16 @@
   "model": "gemini-flash-lite-latest",
   "latencyMs": 1439
  },
+ "04e7516f8735e0aea0068fc0": {
+  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"1.0\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.0\"\n  }\n}",
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 411,
+   "total_tokens": 460
+  },
+  "model": "gemini-flash-lite-latest",
+  "latencyMs": 1516
+ },
  "05f9054de5faf55943c5d332": {
   "content": "{\n  \"team\": {\n    \"choice\": \"sales\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",
   "usage": {
@@ -1648,16 +1658,6 @@
   },
   "model": "gemini-flash-lite-latest",
   "latencyMs": 1059
- },
- "d76f08d00c81b51d9e501498": {
-  "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.05\"\n  }\n}",
-  "usage": {
-   "completion_tokens": 51,
-   "prompt_tokens": 411,
-   "total_tokens": 462
-  },
-  "model": "gemini-flash-lite-latest",
-  "latencyMs": 1807
  },
  "da4baad75f09b378a62becb5": {
   "content": "{\n  \"team\": {\n    \"choice\": \"billing\",\n    \"probability\": \"0.99\"\n  },\n  \"urgent\": {\n    \"probability\": \"0.95\"\n  }\n}",

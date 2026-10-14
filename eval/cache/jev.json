@@ -971,6 +971,33 @@
   },
   "latencyMs": 316
  },
+ "2ce50710072cca9dd4debea9": {
+  "response": {
+   "model": "jev-1.13.0",
+   "answers": {
+    "team": {
+     "type": "choice",
+     "choice": "billing",
+     "confidence": 1,
+     "probabilities": {
+      "billing": 1,
+      "technical": 0,
+      "account": 0,
+      "sales": 0
+     }
+    },
+    "urgent": {
+     "type": "noul",
+     "noul": 0.06
+    }
+   },
+   "usage": {
+    "input_tokens": 584,
+    "output_tokens": 62
+   }
+  },
+  "latencyMs": 7609
+ },
  "2e30292e5f5486ef3112b2ac": {
   "response": {
    "model": "jev-1.13.0",
@@ -3049,33 +3076,6 @@
    }
   },
   "latencyMs": 453
- },
- "947914a36d2e0914593c3af8": {
-  "response": {
-   "model": "jev-1.13.0",
-   "answers": {
-    "team": {
-     "type": "choice",
-     "choice": "billing",
-     "confidence": 1,
-     "probabilities": {
-      "billing": 1,
-      "technical": 0,
-      "account": 0,
-      "sales": 0
-     }
-    },
-    "urgent": {
-     "type": "noul",
-     "noul": 0.06
-    }
-   },
-   "usage": {
-    "input_tokens": 585,
-    "output_tokens": 62
-   }
-  },
-  "latencyMs": 325
  },
  "94aea02c25fee2a79c56c741": {
   "response": {

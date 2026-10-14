@@ -16,17 +16,17 @@ your workflow handles automatically, and "Needs review", which goes to a person.
 
 ## A real-life example
 
-**Nadia** leads customer support at Acme Software, a 40-person software company (a made-up business). About 120 emails
+**Claire** leads customer support at Acme Software, a 40-person software company (a made-up business). About 120 emails
 arrive every day, and someone reads each one just to decide where it goes: billing, technical, account access or
 sales. They also have to spot the urgent ones. That sorting takes the first two hours of every morning, and urgent
 emails still sit unread until somebody gets to them.
 
-Nadia adds the Jev Decision step to the inbox workflow her team already runs in n8n. It answers three questions for
+Claire adds the Jev Decision step to the inbox workflow her team already runs in n8n. It answers three questions for
 every email: which team, is it urgent, and does it ask for a refund. When Jev is confident, the ticket goes straight
 to that team's queue, with urgent ones flagged. When it is not, the email lands on a short triage list for a person.
 
 **After:** in our test on 200 support emails, Jev handled 59% of them on its own and got 97.5% of those right. For
-Nadia's 120 emails, that means about 70 a day reach the right team within a second. At about a minute each to read
+Claire's 120 emails, that means about 70 a day reach the right team within a second. At about a minute each to read
 and route, that is over an hour of sorting saved every day. Her team only reads the 50 or so that are genuinely unclear. Each decision costs a fraction
 of a cent.
 
@@ -258,7 +258,7 @@ urgency 0.6) automates 74.5% at 96.0% accuracy, though that setting was picked a
 
 | Backend | Team accuracy | Team macro-F1 | Urgent accuracy | Urgent F1 | Team Brier | Urgent Brier | Latency p50 / p95 | Cost per 1,000 emails |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| **Jev** | **94.5%** | **0.950** | **96.0%** | **0.925** | **0.095** | **0.034** | **235 / 716 ms** | **$0.025** |
+| **Jev** | **94.5%** | **0.950** | **96.0%** | **0.925** | **0.095** | **0.034** | **235 / 728 ms** | **$0.025** |
 | Chat model | 94.0% | 0.945 | 89.5% | 0.821 | 0.108 | 0.085 | 1,024 / 2,192 ms | $0.061 |
 | Keyword rules | 76.0% | 0.749 | 83.5% | 0.727 | 0.384 | 0.132 | <1 ms | $0 |
 
@@ -272,7 +272,7 @@ urgency 0.6) automates 74.5% at 96.0% accuracy, though that setting was picked a
 
 *The evaluation replaying the recorded answers, as CI does.*
 
-**How it is measured.** Jev and the chat model were each called once per email (200 + 200 requests; Jev used 116,720
+**How it is measured.** Jev and the chat model were each called once per email (200 + 200 requests; Jev used 116,719
 input tokens in total). Every response is recorded in `eval/cache/`, so `node eval/run.mjs --offline` reproduces
 `eval/results.md` exactly without calling any API, and CI checks that it does.
 

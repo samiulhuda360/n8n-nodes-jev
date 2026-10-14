@@ -35,7 +35,7 @@ With a threshold per question (team 0.8, urgency 0.6, set with the node's "Own T
 
 | Backend | Team accuracy | Team macro-F1 | Team Brier | Urgent accuracy | Urgent F1 | Urgent Brier | Both right | Latency p50 | Latency p95 | Cost per 1,000 emails |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jev | 94.5% | 0.950 | 0.095 | 96.0% | 0.925 | 0.034 | 90.5% | 235 ms | 716 ms | $0.025 |
+| Jev | 94.5% | 0.950 | 0.095 | 96.0% | 0.925 | 0.034 | 90.5% | 235 ms | 728 ms | $0.025 |
 | Gemini Flash-Lite (chat model) | 94.0% | 0.945 | 0.108 | 89.5% | 0.821 | 0.085 | 83.5% | 1024 ms | 2192 ms | $0.061 |
 | Keyword rules | 76.0% | 0.749 | 0.384 | 83.5% | 0.727 | 0.132 | 62.0% | <1 ms | <1 ms | $0 |
 
@@ -62,13 +62,13 @@ Answers grouped by the probability each backend gave its own answer, against how
 | 0.00–0.60 | 10 / 54.8% / 50.0% | 0 | 0 |
 | 0.60–0.80 | 17 / 71.8% / 88.2% | 1 / 70.0% / 100.0% | 0 |
 | 0.80–0.90 | 35 / 85.2% / 100.0% | 34 / 84.6% / 55.9% | 42 / 85.0% / 42.9% |
-| 0.90–0.99 | 138 / 93.9% / 99.3% | 118 / 93.1% / 94.9% | 158 / 95.4% / 94.3% |
-| 0.99–1.00 | 0 | 47 / 99.0% / 100.0% | 0 |
+| 0.90–0.99 | 138 / 93.9% / 99.3% | 117 / 93.1% / 94.9% | 158 / 95.4% / 94.3% |
+| 0.99–1.00 | 0 | 48 / 99.0% / 100.0% | 0 |
 
 ## Usage
 
 | Backend | Model reported | Requests | Input tokens | Output tokens |
 |---|---|---:|---:|---:|
-| Jev | jev-1.13.0 | 200 | 116,720 | 12,400 |
-| Gemini Flash-Lite (chat model) | gemini-flash-lite-latest | 200 | 82,372 | 10,149 |
+| Jev | jev-1.13.0 | 200 | 116,719 | 12,400 |
+| Gemini Flash-Lite (chat model) | gemini-flash-lite-latest | 200 | 82,372 | 10,147 |
 | Keyword rules | keyword rules | 200 | 0 | 0 |
